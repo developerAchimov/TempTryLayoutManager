@@ -1,0 +1,103 @@
+./AppWindow.java:5: error: invalid method declaration; return type required
+  setSize(500, 500);
+  ^
+./AppWindow.java:5: error: illegal start of type
+  setSize(500, 500);
+          ^
+./AppWindow.java:6: error: invalid method declaration; return type required
+  setVisible(true);
+  ^
+./AppWindow.java:6: error: illegal start of type
+  setVisible(true);
+             ^
+./AppWindow.java:7: error: invalid method declaration; return type required
+  setLocation (300, 100);
+  ^
+./AppWindow.java:7: error: illegal start of type
+  setLocation (300, 100);
+               ^
+Main.java:3: error: no suitable constructor found for AppWindow(no arguments)
+    AppWindow aw = new AppWindow();
+                   ^
+    constructor AppWindow.AppWindow(<any>) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor AppWindow.AppWindow(<any>) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor AppWindow.AppWindow(<any>) is not applicable
+      (actual and formal argument lists differ in length)
+7 errors
+
+ ******************************************************* 
+
+
+ ******************************************************* 
+
+./AppWindow.java:4: error: AppWindow is not abstract and does not override abstract method windowDeactivated(WindowEvent) in WindowListener
+class AppWindow extends Frame implements WindowListener {
+^
+1 error
+
+ ******************************************************* 
+
+./AppWindow.java:10: error: incompatible types: AppWindow cannot be converted to WindowListener
+     addWindowListener(this);
+                       ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+ ******************************************************* 
+
+
+ ******************************************************* 
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Main.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.AppWindow.java.swp
+	.AppWindow.java.un~
+	.SystemOutput.txt.swp
+	AppWindow$1.class
+	AppWindow.class
+	AppWindow.java
+	AppWindow.java~
+	Main.java~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+./AppWindow.java:6: error: cannot find symbol
+    Panel panelMain = new Panel(FlowLayout);
+                                ^
+  symbol:   variable FlowLayout
+  location: class AppWindow
+./AppWindow.java:10: error: cannot find symbol
+    Panel panelCards = new Panel(CardLayout);
+                                 ^
+  symbol:   variable CardLayout
+  location: class AppWindow
+2 errors
+
+ ****************14:57**************** 
+
+./AppWindow.java:26: error: ')' expected
+    });
+      ^
+./AppWindow.java:22: error: 'void' type not allowed here
+    addWindowListener(new WindowAdapter() {
+                     ^
+2 errors
+*****************15:34********************
+./AppWindow.java:26: error: ')' expected
+    });
+      ^
+./AppWindow.java:22: error: 'void' type not allowed here
+    addWindowListener(new WindowAdapter() {
+                     ^
+2 errors
+
+

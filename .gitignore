@@ -1,17 +1,21 @@
-.Main.java.swp
-.Main.java.un~
-SystemOutput.txt
 ..gitignore.un~
 .gitignore~
-Main.class
-.AppWindow.java.swp
-.AppWindow.java.un~
+
+SystemOutput.txt
 .SystemOutput.txt.swp
+.SystemOutput.txt.un~
+SystemOutput.txt~
+
 AppWindow$1.class
 AppWindow.class
 AppWindow.java~
-Main.java~
+.AppWindow.java.swp
+.AppWindow.java.un~
 
+Main.java~
+Main.class
+.Main.java.swp
+.Main.java.un~
 
 
 
