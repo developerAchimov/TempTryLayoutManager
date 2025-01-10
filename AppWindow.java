@@ -3,20 +3,22 @@ import java.awt.event.*;
 
 class AppWindow extends Frame {
 
-  AppWindow() {
-    setSize(500, 500);
-    setVisible(true);
-    setLocation (300, 100);
-
-    // Create main panel, buttons and card panel
-    Panel panelMain = new Panel(new FlowLayout());
-    panelMain.setBackground(Color.white);
+    // Buttons and card panel
     Button buttonColorCustomizing = new Button("Color Customizing");
     Button buttonColorSchemeExamples = new Button("Color SchemeExamples");
     Button buttonColorSchemesReady_Made = new Button("Color Schemes Ready-Made");
     CardLayout LayoutCard = new CardLayout();
     Panel panelCards = new Panel(LayoutCard);
 
+  AppWindow() {
+    setSize(500, 500);
+    setVisible(true);
+    setLocation (300, 100);
+    
+    // Create main panel
+    Panel panelMain = new Panel(new FlowLayout());
+    panelMain.setBackground(Color.white);
+    
     // Create GridBagLayout panels
     GridBagLayout gblColorCustomizing = new GridBagLayout();
     Panel panelColorCustomizing = new Panel(gblColorCustomizing);
@@ -56,6 +58,20 @@ class AppWindow extends Frame {
         System.exit(0);
       }
     });
-  }
+
+    // Adding actions for buttons
+    buttonColorCustomizing.addMouseListener(mouseAdapter);
+    buttonColorSchemeExamples.addMouseListener(mouseAdapter);
+    buttonColorSchemesReady_Made.addMouseListener(mouseAdapter);
+
+  } // AppWindow - end
+
+  MouseAdapter mouseAdapter = new MouseAdapter() {
+    public void mouseClicked (MouseEvent e) {
+      if (e.getSource() == buttonColorCustomizing) LayoutCard.show(panelCards, "1");
+      if (e.getSource() == buttonColorSchemeExamples) LayoutCard.show(panelCards, "2");
+      if (e.getSource() == buttonColorSchemesReady_Made) LayoutCard.show(panelCards, "3");
+    }
+  };
 
  }
